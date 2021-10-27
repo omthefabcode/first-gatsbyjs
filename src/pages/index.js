@@ -5,7 +5,6 @@ import Layout from "./components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
-    console.log('console: ', StaticImage);
     return (
         <Layout pageTitle="Home Page">
             <p>This text is comming from Home Page.</p>
