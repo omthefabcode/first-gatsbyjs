@@ -3,5 +3,9 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "My First Site",
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 };
