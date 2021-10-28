@@ -1,8 +1,7 @@
-import React from "react";
+import * as React from "react";
 import { Link } from "gatsby";
 
 import * as style from "./layout.module.css";
-// import { container } from './layout.module.css';
 
 const Layout = (props) => {
     return (
@@ -25,6 +24,7 @@ const Layout = (props) => {
             <main>
                 <h1 className={style.heading}>{props.pageTitle}</h1>
                 {props.pageTitle}
+                {props.children}
             </main>
         </div>
     );
