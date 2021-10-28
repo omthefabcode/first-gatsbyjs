@@ -1,12 +1,13 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
-
-const IndexPage = () => {
+    
+const IndexPage = (props) => {
     return (
         <Layout pageTitle="Home Page">
-            <p>This text is comming from Home Page.</p>
+            <p>{props.data.site.siteMetadata.description}</p>
             <StaticImage
                 alt="Clifford"
                 src="../images/first.jpg"
@@ -14,5 +15,15 @@ const IndexPage = () => {
         </Layout>
     );
 }
+
+export const query = graphql`
+{
+    site {
+        siteMetadata {
+            description
+        }
+    }
+}
+`;
 
 export default IndexPage;

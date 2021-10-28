@@ -11,7 +11,6 @@ const Layout = (props) => {
             {
                 site {
                     siteMetadata {
-                        siteUrl
                         title
                     }
                 }
@@ -44,8 +43,6 @@ const Layout = (props) => {
             </nav>
             <main>
                 <h2 className={style.heading}>{props.pageTitle}</h2>
-                
-                {props.pageTitle}
                 {props.children}
             </main>
         </div>
