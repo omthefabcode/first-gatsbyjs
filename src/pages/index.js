@@ -8,9 +8,9 @@ const IndexPage = () => {
         <Layout pageTitle="Home Page">
             <p>This text is comming from Home Page.</p>
             <StaticImage
-        alt="Clifford"
-        src="../images/first.jpg"
-      />
+                alt="Clifford"
+                src="../images/first.jpg"
+            />
         </Layout>
     );
 }
